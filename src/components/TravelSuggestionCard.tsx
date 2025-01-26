@@ -1,4 +1,3 @@
-import React from 'react';
 import { TravelSuggestion } from '../types';
 import { Star, MapPin, DollarSign } from 'lucide-react';
 

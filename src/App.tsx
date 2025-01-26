@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChatMessage } from './components/ChatMessage';
 import { ChatInput } from './components/ChatInput';
-import { TravelMap } from './components/TravelMap';
+//import { TravelMap } from './components/TravelMap';
 import { Message, ChatState, SearchFilters as SearchFiltersType, TravelSuggestion } from './types';
-import { Plane, Hotel, Utensils, Trees } from 'lucide-react';
+import { Hotel, Utensils, Trees } from 'lucide-react';
 import { SearchFiltersv1 } from './components/SearchFiltersv1';
+import { TravelMap } from './components/TravelMap';
 
 const generateResponse = async (prompt: string, filters: SearchFiltersType): Promise<Message> => {
   await new Promise(resolve => setTimeout(resolve, 1000));
@@ -100,8 +101,9 @@ function App() {
       <header className="bg-white border-b px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Plane className="w-8 h-8 text-blue-600" />
-            <h1 className="text-xl font-semibold">AtlAI Travel Assistant</h1>
+            {/* <Plane className="w-8 h-8 text-blue-600" /> */}
+            <img src="./src/assets/logo.png" alt="Logo" className="h-10 w-auto"/>
+            <h1 className="text-xl font-roboto">ATLAS</h1>
           </div>
           <div className="flex gap-4">
             <button className="p-2 rounded-lg hover:bg-gray-100">
