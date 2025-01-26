@@ -1,12 +1,11 @@
-import React from 'react';
 import DatePicker from 'react-datepicker';
 import { SearchFilters } from '../types';
 import { Calendar, Users, DollarSign, MapPin } from 'lucide-react';
 import "react-datepicker/dist/react-datepicker.css";
 
 interface SearchFiltersProps {
-  filters: SearchFiltersv1;
-  onChange: (filters: SearchFiltersv1) => void;
+  filters: SearchFilters;
+  onChange: (filters: SearchFilters) => void;
 }
 
 export function SearchFiltersv1({ filters, onChange }: SearchFiltersProps) {
